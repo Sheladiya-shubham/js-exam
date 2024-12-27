@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sabji Mandi Mart</title>
+</head>
+<body>
+    <div class="formData">
+        <section class="model">
+            <div class="addmodel" align="center" id="addmodel">
+                <h1>Sabji Mandi Mart</h1>
+                <table>
+                    <tr>
+                        <td>Product Name:</td>
+                        <td><input type="text" id="pname" /></td>
+                    </tr>
+                    <tr>
+                        <td>Image:</td>
+                        <td><input type="text" id="pimage" /></td>
+                    </tr>
+                    <tr>
+                        <td>Category:</td>
+                        <td><input type="text" id="pcat" /></td>
+                    </tr>
+                    <tr>
+                        <td>Price:</td>
+                        <td><input type="text" id="pprice" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" id="btn" class="add-product">Add To Product</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <div class="cartData">
+            <div class="d-flex justify-content-center">
+                <input type="text" id="filter-input" placeholder="Filter products..." />
+                <button class="btn" id="filterData">Filter</button>
+            </div>
+
+            <div id="card-container" class="d-flex flex-wrap justify-content-center">
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
